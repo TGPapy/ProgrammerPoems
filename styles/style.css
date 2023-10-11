@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.background {
+    height: 100%;
+    background-image: url("../images/background-image.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.poem-container {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 3px solid lightblue; */
+}
+
+.poem {
+    font-size: 3vw;
+    font-family: "Garamond";
+    line-height: 1.7;
+    text-shadow: 2px 2px 4px #6f6f6f;
+    text-align: center;
+    margin: 0;
+}
+
+.credt-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.credit {
+    font-size: 0.7vw;
+    color: #939393;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.credit-link {
+    color: #939393;
+}
