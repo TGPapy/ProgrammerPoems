@@ -1,3 +1,4 @@
+/* "Global" stlyes */
 html, body {
     height: 100%;
     margin: 0;
@@ -11,8 +12,11 @@ html, body {
     background-repeat: no-repeat;
 }
 
+
+
+/* Main page styles */
 .poem-container {
-    height: 60%;
+    height: 63%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
