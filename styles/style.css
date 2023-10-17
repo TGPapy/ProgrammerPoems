@@ -1,9 +1,3 @@
-/* "Global" stlyes */
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
 .background {
     height: 100%;
     background-image: url("../images/background-image.jpg");
@@ -12,41 +6,34 @@ html, body {
     background-repeat: no-repeat;
 }
 
-
-
-/* Main page styles */
-.poem-container {
-    height: 58%;
-    display: flex;
+/* fs stands for full screen */
+.container-vertical-fs {
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    display: flex;
     align-items: center;
-    /* border: 3px solid lightblue; */
+    height: 100vh;
 }
 
 .poem {
-    font-size: 3vw;
-    font-family: "Garamond";
-    line-height: 1.7;
-    text-shadow: 2px 2px 4px #6f6f6f;
     text-align: center;
-    margin: 0;
+    white-space: pre-line;
+    text-shadow: 2px 2px 4px #6f6f6f;
 }
 
-.credt-container {
-    position: relative;
-    min-height: 100vh;
+@media screen and (max-width: 800px) {
+    .poem {
+        font-size: 4.6vw;
+    }
 }
 
-.credit {
-    font-size: 0.7vw;
-    color: #939393;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 10px;
+@media screen and (min-width: 801px) {
+    .poem {
+        font-size: 3vw;
+    }
 }
 
-.credit-link {
-    color: #939393;
-}
+/* Debugging rules */
+/* div {
+    border: 3px solid lightblue;
+} */
