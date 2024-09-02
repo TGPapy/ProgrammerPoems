@@ -1,0 +1,55 @@
+<!-- This script is only here to fool the Live Server VS Code extension into 
+ thinking this snippet has a head tag. It doesn't do anything. -->
+ <script>//</head></script>
+
+<!-- The navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+
+    <div class="container-fluid">
+
+        <!-- The toggle button for the navbar (shown when the screen ) -->
+        <button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <!-- Navbar items -->
+            <ul class="navbar-nav">
+
+                <!-- The home link -->
+                <li class="nav-item">
+                   <a class="nav-link" href="/index.html">Home</a> 
+                </li>
+
+                <!-- Poem archive dropdown menu -->
+                <li class="nav-item dropdown">
+
+                    <!-- Dropdown link/button -->
+                    <a class="nav-link dropdown-toggle" href="#" role="button" 
+                    data-bs-toggle="dropdown"
+                    >
+                        Poem archive
+                    </a>
+                    
+                    <!-- Dropdown items -->
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/pages/poem-archive-2024.html">2024</a></li>
+                    </ul>
+
+                </li>
+
+                <!-- About link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/about.html">About</a> 
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>

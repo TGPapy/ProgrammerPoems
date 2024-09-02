@@ -1,39 +1,54 @@
-.background {
-    height: 100%;
-    background-image: url("../images/background-image.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.bg-image-container {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    position: fixed;
 }
 
-/* fs stands for full screen */
-.container-vertical-fs {
-    flex-direction: column;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+.bg-image {
+    filter: brightness(0.5) blur(10px);
+    transform: scale(1.1);
+    object-fit: cover;
     height: 100vh;
+    width: 100vw;
+}
+
+.profile-picture {
+    max-width: clamp(128px, 40%, 256px);
+}
+
+.rounded-image {
+    border-radius: 50%;
 }
 
 .poem {
-    text-align: center;
+    color: white;
+    font-family: Garamond;
+    text-shadow: 0.5px 0.5px black;
+    text-align: left;
     white-space: pre-line;
-    text-shadow: 2px 2px 4px #6f6f6f;
 }
 
-@media screen and (max-width: 800px) {
-    .poem {
-        font-size: 4.6vw;
-    }
+.poem-date {
+    color: gray;
+    text-shadow: 0.5px 0.5px black;
+    font-size: calc(0.50em + 0.50vw);
+    font-style: italic;
 }
 
-@media screen and (min-width: 801px) {
-    .poem {
-        font-size: 3vw;
-    }
-}
 
-/* Debugging rules */
+
+/* Debuging rules
+====================================================================================== */
 /* div {
     border: 3px solid lightblue;
+}
+
+.row {
+    border: 3px solid blue;
+}
+
+.col {
+    border: 3px solid red;
 } */
