@@ -8,5 +8,5 @@ import { LoadHTMLSnippet } from "./utils.js";
 //On DOMContentLoaded
 addEventListener("DOMContentLoaded", () => {
     //Load the main navigation bar for the site.
-    LoadHTMLSnippet("mainNavbarLoadTarget", "/snippets/mainNavbar.html");
+    LoadHTMLSnippet("mainNavbarLoadTarget", "snippets/mainNavbar.html");
 });
