@@ -1,23 +1,64 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Programmer Poems</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/bootstrap.css">
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-    <div class="container-fluid container-vertical-fs background">
-        <div class="row row-cols-auto">
-            <div class="col">
-                <p class="lead poem">Grey skies weep cold tears /
-                    Nought seen or heard but the rain /
-                    Books keep me cozy</p>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Standard page setup -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Programmer Poems</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+
+        <!-- Links to Bootstrap css/js files -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!-- Links to my css/js files -->
+        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" href="/styles/index-style.css">
+        <script src="/scripts/loadMainNavbar.js" type="module"></script>
+
+    </head>
+
+    <body>
+
+        <!-- Background image and container -->
+         <div class="bg-image-container">
+            <img class="bg-image" 
+            src="https://images.unsplash.com/photo-1635861105962-ff85ca1ce355?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            >
+         </div>
+
+        <!-- Container for all content on the page -->
+        <div class="container-fluid d-flex flex-column min-vh-100">
+
+            <!-- Grid row for the navbar (the navbar will be loaded into this div) -->
+            <div class="row" id="mainNavbarLoadTarget"></div>
+
+            <!-- Grid row for the lead poem -->
+            <div class="row flex-grow-1">
+                
+                <div class="col d-flex flex-column 
+                justify-content-center align-items-center"
+                >
+
+                    <!-- The lead poem -->
+                    <pre class="poem lead-poem">
+                        beads of dew
+                        hung between blades of grass -
+                        spring spiderweb
+                    </pre>
+                    <p class="poem-date">[29 Aug 2024]</p>
+
                 </div>
+
             </div>
+
         </div>
-    </div>
-    <script src="scripts/bootstrap.js"></script>
-</body>
+
+    </body>
+
 </html>
